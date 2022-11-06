@@ -115,7 +115,12 @@ def tamaño_nave(naves):
     for nave in naves:
         if nave.largo > maximo:
             navemasgrande = nave
+            maximo = nave.largo
+
+        elif nave.largo < minimo:
+            navemaspequeña = nave
             minimo = nave.largo
-            
+                
+
 
 
