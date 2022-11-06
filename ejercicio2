@@ -12,5 +12,11 @@ def Sarrus(matriz_propuesta, nivel=0, determinante=0):
         print("\n")
         print(determinante, "es el determinante de la matriz propuesta")
         return None
-        
+    
+    matriz_propuesta = [ matriz_propuesta[0][1:3] + [matriz_propuesta[0][0]],
+                          matriz_propuesta[1][1:3] + [matriz_propuesta[1][0]],
+                          matriz_propuesta[2][1:3] + [matriz_propuesta[2][0]] ]    
+
+#ejemplo
+
 
