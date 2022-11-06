@@ -106,6 +106,16 @@ def mayor_numero_de_pasajeros(naves):
             print(nave)
 mayor_numero_de_pasajeros(naves)
 
+#APARTADO 6
+#mostrar toda la información de la nave más pequeña y la más grande
 
+def tamaño_nave(naves):
+    minimo = 100000
+    maximo = 0
+    for nave in naves:
+        if nave.largo > maximo:
+            navemasgrande = nave
+            minimo = nave.largo
+            
 
 
