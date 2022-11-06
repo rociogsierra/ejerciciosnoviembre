@@ -57,11 +57,12 @@ def orden(lista_naves):
                     lista_en_orden_copy[posicion_ordenada] = elemento
     return lista_en_orden_copy
 
-
+#APARTADO 1
 #mostrar toda la información del “Halcón Milenario” y la “Estrella de la Muerte”
 
 [(nave.nombre, nave.largo) for nave in orden(naves)]
 
+#APARTADO 2
 #determinar cuáles son las cinco naves con mayor cantidad de pasajeros
 
 def mayor_numero_de_pasajeros(naves):
@@ -70,4 +71,17 @@ def mayor_numero_de_pasajeros(naves):
     for i in range(5):
         print(i+1, naves_en_orden[i])
 mayor_numero_de_pasajeros(naves)
-        
+
+#APARTADO 3
+#indicar cuál es la nave que requiere mayor cantidad de tripulación
+
+def mayor_cantidad_de_tripulacion(naves):
+    mayor_cantidad_de_tripulacion = 0
+    for nave in naves:
+        if nave.tripulacion > mayor_cantidad_de_tripulacion:
+            mayor_cantidad_de_tripulacion = nave.tripulacion
+            nueva_con_mayor_cantidad_de_tripulacion = nave
+    print(nave_con_mayor_cantidad_de_tripulacion)
+mayor_cantidad_de_tripulacion(naves)
+
+
