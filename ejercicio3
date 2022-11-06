@@ -59,5 +59,15 @@ def orden(lista_naves):
 
 
 #mostrar toda la información del “Halcón Milenario” y la “Estrella de la Muerte”
+
 [(nave.nombre, nave.largo) for nave in orden(naves)]
 
+#determinar cuáles son las cinco naves con mayor cantidad de pasajeros
+
+def mayor_numero_de_pasajeros(naves):
+    naves_en_orden = sorted(naves, key = lambda x: x.cantidad_de_pasajeros, reverse = True)
+    #pide cinco naves por tanto el rango es cinco
+    for i in range(5):
+        print(i+1, naves_en_orden[i])
+mayor_numero_de_pasajeros(naves)
+        
