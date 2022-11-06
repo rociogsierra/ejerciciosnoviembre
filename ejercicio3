@@ -8,4 +8,20 @@ class nave():
         self.cantidad_de_pasajeros = cantidad_de_pasajeros
     def __str__(self):
         return f"nombre: {self.nombre} - largo: {self.largo} - tripulacion: {self.tripulacion} - cantidad de pasajeros: {self.cantidad_de_pasajeros}"
-            
+
+#los nombres de las naves los he buscado en internet por lo que no sé si son correctos (imagino que sí) y los datos me los he inventado
+
+nave_1 = nave("Ala-X", 1000, 5, 10)
+nave_2 = nave("Halcón Milenario", 40000, 7, 17)
+nave_3 = nave("Caza TIE", 300, 1, 1)
+nave_4 = nave("Destructor Estelar", 30000, 31, 9)
+nave_5 = nave("Lanzadera Imperial", 3000, 4, 10)
+nave_6 = nave("Nave Real Nubian 327 tipo J", 900, 6, 7)
+nave_7 = nave("Nave de Control de Droides clase Lucrehulk", 2000, 7, 4)
+nave_8 = nave("Supremacy", 4500, 10, 10)
+nave_9 = nave("Speeders", 10, 1, 1)
+nave_10 = nave("Estrella de la muerte", 30000, 40, 10)
+nave_11 = nave("AT ST", 500, 2, 1)
+nave_12 = nave("AT AT", 500, 1, 2)
+
+
