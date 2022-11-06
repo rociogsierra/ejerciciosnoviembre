@@ -97,5 +97,15 @@ def AT(naves):
         print("Ninguna de las naves comienza con AT")
 AT(naves)
 
+#APARTADO 5
+#listar todas las naves que pueden llevar seis o más pasajeros
+
+def mayor_numero_de_pasajeros(naves):
+    for nave in naves:
+        if nave.cantidad_de_pasajeros >= 6:
+            print(nave)
+mayor_numero_de_pasajeros(naves)
+
+
 
 
