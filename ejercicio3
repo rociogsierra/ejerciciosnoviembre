@@ -120,7 +120,8 @@ def tamaño_nave(naves):
         elif nave.largo < minimo:
             navemaspequeña = nave
             minimo = nave.largo
-                
+tamaño_nave(naves)
+
 
 
 
