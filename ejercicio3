@@ -24,4 +24,14 @@ nave_10 = nave("Estrella de la muerte", 30000, 40, 10)
 nave_11 = nave("AT ST", 500, 2, 1)
 nave_12 = nave("AT AT", 500, 1, 2)
 
+naves = [nave_1, nave_2, nave_3, nave_4, nave_5, nave_6, nave_7, nave_8, nave_9, nave_10, nave_11, nave_12]
+naves
 
+#realizar un listado ordenado por nombre de las naves de manera ascendente y por largo de las mismas de manera descendente
+
+def orden(lista_naves):
+    lista_en_orden = sorted(lista_naves, key = lambda x: x.nombre.lower())
+    lista_en_orden_copy = lista_en_orden.copy()
+    lista_nombre_naves = [nave.nombre for nave in lista_en_orden]
+    lista_largo_naves = [nave.largo for nave in lista_en_orden]
+    
