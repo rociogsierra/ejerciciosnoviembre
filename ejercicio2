@@ -1,0 +1,5 @@
+#ejercicio 2
+#igual al del examen pero en vez de una matriz 5x5 es una mmtriz 3x3
+
+def Sarrus(matriz, nivel=0, determinante=0):
+    print("el determinante es: ", determinante, "- el nivel: ", nivel)
