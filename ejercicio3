@@ -56,4 +56,8 @@ def orden(lista_naves):
                     lista_en_orden_copy[posicion_desordenada] = lista_en_orden_copy[posicion_ordenada]
                     lista_en_orden_copy[posicion_ordenada] = elemento
     return lista_en_orden_copy
-                                
+
+
+#mostrar toda la información del “Halcón Milenario” y la “Estrella de la Muerte”
+[(nave.nombre, nave.largo) for nave in orden(naves)]
+
