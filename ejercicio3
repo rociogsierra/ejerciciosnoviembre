@@ -84,4 +84,18 @@ def mayor_cantidad_de_tripulacion(naves):
     print(nave_con_mayor_cantidad_de_tripulacion)
 mayor_cantidad_de_tripulacion(naves)
 
+#APARTADO 4
+#mostrar todas las naves que comienzan con AT
+
+def AT(naves):
+    flag = False
+    for nave in naves:
+        if nave.nombre.lower()[:2] == "AT":
+            flag = True
+            print(nave)
+    if flag == False:
+        print("Ninguna de las naves comienza con AT")
+AT(naves)
+
+
 
