@@ -34,4 +34,26 @@ def orden(lista_naves):
     lista_en_orden_copy = lista_en_orden.copy()
     lista_nombre_naves = [nave.nombre for nave in lista_en_orden]
     lista_largo_naves = [nave.largo for nave in lista_en_orden]
-    
+
+    letras_iniciales = [nave.nombre[0] for nave in lista_en_orden]
+    for letra in set(letras_iniciales):
+        posiciones = []
+        for pos, nombre_nave in enumerate(lista_nombre_naves):
+            if nombre_nave[0] == letra:
+                posiciones.append(pos)
+            if len(posiciones) > 1:
+                largos = []
+                for posicion in posiciones:
+                    largos.append(lista_largo_naves[posicion])
+                tabla_largos = dict(zip(largos, posiciones))
+                posiciones_en_orden = []
+                for k in sorted(tabla_largos.keys(), reverse = True):
+                    posiciones_en_orden.append(tabla_largos[k])
+                ordenado = zip(posiciones[:len(posiciones)//2], posiciones_en_orden[:len(posiciones)//2])
+
+                for posicion_desordenada, posicion_ordenada in ordenado.items():
+                    elemento = lista_en_orden[posicion_desordenada]
+                    lista_en_orden_copy[posicion_desordenada] = lista_en_orden_copy[posicion_ordenada]
+                    lista_en_orden_copy[posicion_ordenada] = elemento
+    return lista_en_orden_copy
+                                
