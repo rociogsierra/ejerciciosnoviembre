@@ -1,0 +1,14 @@
+#ejercicio 1
+#crear la Torre de Hanói
+
+def Torre_de_Hanói(numero_de_discos, aguja_1, aguja_2, aguja_3):
+    if numero_de_discos == 0:
+        return None
+    elif numero_de_discos > 0:
+        Torre_de_Hanói(numero_de_discos-1, aguja_1, aguja_2, aguja_3)
+        print("mover", numero_de_discos, "a aguja_3", aguja_3, "desde aguja_1", aguja_1)
+        Torre_de_Hanói(numero_de_discos-1, aguja_2, aguja_3, aguja_1)
+
+#prueba
+Torre_de_Hanói(2, "A", "C", "B")
+
