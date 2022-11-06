@@ -1,5 +1,16 @@
 #ejercicio 2
 #igual al del examen pero en vez de una matriz 5x5 es una mmtriz 3x3
 
-def Sarrus(matriz, nivel=0, determinante=0):
+def Sarrus(matriz_propuesta, nivel=0, determinante=0):
     print("el determinante es: ", determinante, "- el nivel: ", nivel)
+    if nivel <3:
+        determinante += matriz_propuesta[0][0] * matriz_propuesta[1][1] * matriz_propuesta[2][2]
+    elif nivel >= 3 and nivel < 6:
+        #la matriz debe ser de nivel menor que seis
+        determinante += -matriz_propuesta[0][2] * matriz_propuesta[1][1] * matriz_propuesta[2][0]
+    else:
+        print("\n")
+        print(determinante, "es el determinante de la matriz propuesta")
+        return None
+        
+
